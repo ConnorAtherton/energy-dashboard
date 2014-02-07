@@ -17,26 +17,16 @@ app.configure(function() {
 
 })
 
-app.get('/cv', function(req,res) {
-  res.sendfile('./dist/cv.pdf');
+// Default route - show the visualisations here
+app.get('/', function(req,res) {
+  res.sendfile('./dist/index.html');
 });
 
-app.get('/terminal', function(req,res) {
-  res.sendfile('./dist/terminal.html');
+// This file hasn't been created yet but you can see
+// how we could handle it
+app.get('/reports', function(req,res) {
+  res.sendfile('./dist/reports.html');
 });
-
-app.get('/I-said-hey', function(req, res) {
-  res.sendfile('./dist/heman.html');
-})
-
-app.get('/pretty-rain', function(req, res) {
-  res.sendfile('./dist/rainfall.html');
-})
-
-app.get('/vim-cheatsheet', function(req, res) {
-  console.log('vim route');
-  res.sendfile('./dist/vim.html');
-})
 
 //The 404 Route (ALWAYS Keep this as the last route)
 app.get('*', function(req, res){
