@@ -1,0 +1,10 @@
+.line-graph {
+  min-height: 200px;
+}
+
+span.past {
+  font-weight: bold;
+  color: #56A0DD;
+
+  &:hover { @extend .hover }
+}

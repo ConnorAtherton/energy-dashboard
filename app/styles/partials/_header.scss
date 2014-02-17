@@ -1,0 +1,36 @@
+.header-top {
+  height: 40px;
+  width: 100%;
+  background-color: #56A0DD;
+  -webkit-box-shadow: 0 -6px 12px -6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 -6px 12px -6px rgba(0,0,0,.3);
+  box-shadow: 0 -6px 12px -6px rgba(0, 0, 0, 0.3);
+  color: 0 -6px 12px -6px rgba(0,0,0,.3);
+  overflow: hidden;
+  color: #fff;
+
+  header {
+    height: 100%;
+    width: 100%;
+    line-height: 40px;
+    font-size: 0.9em;
+
+
+    > .title {
+      @extend .hover;
+      @extend .padding;
+      float: left;
+    }
+
+    > .report {
+      @extend .hover;
+      @extend .padding;
+      float: right;
+      border-left: 1px solid #98c0e2;
+
+      &:hover {
+        background-color: lighten(#56A0DD, 8%);
+      }
+    }
+  }
+}
