@@ -4,4 +4,10 @@
 
 @import "partials/header";
 @import "partials/graph";
+@import "partials/hero";
+@import "partials/typography";
 
+// global styles
+* {
+  transition: all 0.1s linear;
+}

@@ -4,11 +4,12 @@ html, body {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lucida Grande', 'Lato', sans-serif;
   font-weight: 300;
   text-rendering: optimizeLegibility;
   color: #505050;
   line-height: 1.35em;
+  background-color: #fff;
 }
 
 .hover { cursor: pointer; }
@@ -31,5 +32,12 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   height: auto;
-  min-height: 24em;
+
+  &.header-top { min-height: 24em; }
+  &.line-grapph { min-height: 4em; }
+}
+
+.align-center-line {
+  @extend  .align-center;
+  min-height: 4em;
 }

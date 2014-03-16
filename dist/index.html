@@ -6,36 +6,86 @@
   </head>
   <body>
     <div class="header-top">
-      <div class="grid">
         <header>
-          <div class="title">EnergyLancaster</div>
+          <div class="title">Energy on Campus</div>
+          <div class="search">
+            <input type="text" placeholder="Search the energy database">
+          </div>
           <div class="report">Create Report</div>
         </header>
+    </div>
+
+    <div class="content-wrap">
+      <div class="hero-wrap section">
+        <div class="hero grid grid-pad">
+          <!-- Header visualisation goes here -->
+          <div id="coolAsFuckTreeContainer">
+            <div id="line"></div>
+          </div>
+        </div>
+        <div class="hero-btn-container">
+          <div class="button open-selector" data-open="false">View data from the past..</div>
+          <div class="time-selector">
+            <ul class="selector-box" style="top: -391px; -webkit-transform-origin: 27px 382px;">
+              <li class="start-animation">day</li>
+              <li class="start-animation">week</li>
+              <li class="start-animation">month</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="progress-section section">
+        <div class="progress-bar-wrap">
+          <div class="progress-bar"></div>
+        </div>
+        <h2><span class="progress-percent">35%</span> towards reaching our main goal</h2>
+        <div class="btn-container">
+          <div class="button progress-start">View our energy goals</div>
+        </div>
+      </div>
+
+      <div class="pie-section section">
+        <div class="grid">
+          <div class="col-1-3">
+            Total energy produced by the wind turbine over the past <span class="past">day</span>
+            <span class="number">76</span>
+            <div id="chart"></div>
+          </div>
+          <div class="col-1-3">
+            Total energy produced by the wind turbine over the past <span class="past">day</span>
+            <span class="number">76</span>
+            <div id="pie2"></div>
+          </div>
+          <div class="col-1-3">
+            Total energy produced by the {{insert energy source here}} over the past <span class="past">day</span>
+            <span class="number">87</span>
+            <div id="pie3"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-section section">
+        <h2>See what everyone's saying about energy on campus</h2>
+        <div class="grid grid-pad">
+          <div class="icon-contain col-1-3">
+            <img src="/images/facebook-128.png" alt="">
+          </div>
+          <div class="icon-contain col-1-3">
+            <img src="/images/twitter-128.png" alt="">
+          </div>
+          <div class="icon-contain col-1-3">
+            <img src="/images/googleplus-128.png" alt="">
+          </div>
+          <div class="col-3-3 footer">
+            <div>May the force be with you</div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="grid grid-pad">
-      <!-- Header visualisation goes here -->
-      <div id="coolAsFuckTreeContainer">
-        <div id="coolAsFuckTree" class="align-center">Tree goes here</div>
-      </div>
-    </div>
-    <div class="grid grid-pad line-graph">
-      <div class="col-1-3">
-        Total energy produced by the wind turbine over the past <span class="past">day</span>
-      </div>
-      <div class="col-2-3">
-        <!-- graph goes here -->
-        <div id="turbineGraph"></div>
-      </div>
-    </div>
-    <div class="grid grid-pad line-graph">
-      <div class="col-1-3">
-        Total energy produced by the {{insert energy source here}} over the past <span class="past">day</span>
-      </div>
-      <div class="col-2-3">
-        <!-- graph goes here -->
-        <div id="turbineGraph"></div>
-      </div>
-    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="scripts/vendor/vendor.min.js"></script>
+    <script src="scripts/main.min.js"></script>
   </body>
 </html>

@@ -1,5 +1,11 @@
 .line-graph {
   min-height: 200px;
+  color: #999;
+}
+
+#coolAsFuckTreeContainer {
+  width: 500px;
+  margin: auto;
 }
 
 span.past {
@@ -7,4 +13,9 @@ span.past {
   color: #56A0DD;
 
   &:hover { @extend .hover }
+}
+
+.number {
+ text-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
+ color: #56A0DD;
 }
